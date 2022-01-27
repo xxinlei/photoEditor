@@ -13,6 +13,16 @@
 		F7C50D6427997058005AC8F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C50D6227997058005AC8F1 /* Main.storyboard */; };
 		F7C50D6627997059005AC8F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7C50D6527997059005AC8F1 /* Assets.xcassets */; };
 		F7C50D6927997059005AC8F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7C50D6727997059005AC8F1 /* LaunchScreen.storyboard */; };
+		F7C50D71279C0341005AC8F1 /* editPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D70279C0341005AC8F1 /* editPhotoVC.swift */; };
+		F7C50D73279C12A1005AC8F1 /* editorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D72279C12A1005AC8F1 /* editorView.swift */; };
+		F7C50D75279C6F5D005AC8F1 /* cropView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D74279C6F5D005AC8F1 /* cropView.swift */; };
+		F7C50D77279C73A2005AC8F1 /* ratio.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D76279C73A2005AC8F1 /* ratio.swift */; };
+		F7C50D79279D0041005AC8F1 /* cropPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D78279D0041005AC8F1 /* cropPhotoVC.swift */; };
+		F7C50D7B279ED58D005AC8F1 /* flip.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D7A279ED58D005AC8F1 /* flip.swift */; };
+		F7C50D7D279FA839005AC8F1 /* flipPhotoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D7C279FA839005AC8F1 /* flipPhotoVC.swift */; };
+		F7C50D82279FCCDF005AC8F1 /* colorFilter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D81279FCCDF005AC8F1 /* colorFilter.swift */; };
+		F7C50D8427A244F7005AC8F1 /* extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C50D8327A244F7005AC8F1 /* extension.swift */; };
+		F7C50D8927A27024005AC8F1 /* NotoSansTC-Medium.otf in Resources */ = {isa = PBXBuildFile; fileRef = F7C50D8827A27024005AC8F1 /* NotoSansTC-Medium.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +34,16 @@
 		F7C50D6527997059005AC8F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7C50D6827997059005AC8F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7C50D6A27997059005AC8F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7C50D70279C0341005AC8F1 /* editPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editPhotoVC.swift; sourceTree = "<group>"; };
+		F7C50D72279C12A1005AC8F1 /* editorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = editorView.swift; sourceTree = "<group>"; };
+		F7C50D74279C6F5D005AC8F1 /* cropView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cropView.swift; sourceTree = "<group>"; };
+		F7C50D76279C73A2005AC8F1 /* ratio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ratio.swift; sourceTree = "<group>"; };
+		F7C50D78279D0041005AC8F1 /* cropPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cropPhotoVC.swift; sourceTree = "<group>"; };
+		F7C50D7A279ED58D005AC8F1 /* flip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flip.swift; sourceTree = "<group>"; };
+		F7C50D7C279FA839005AC8F1 /* flipPhotoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = flipPhotoVC.swift; sourceTree = "<group>"; };
+		F7C50D81279FCCDF005AC8F1 /* colorFilter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorFilter.swift; sourceTree = "<group>"; };
+		F7C50D8327A244F7005AC8F1 /* extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension.swift; sourceTree = "<group>"; };
+		F7C50D8827A27024005AC8F1 /* NotoSansTC-Medium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NotoSansTC-Medium.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +78,55 @@
 			children = (
 				F7C50D5C27997058005AC8F1 /* AppDelegate.swift */,
 				F7C50D5E27997058005AC8F1 /* SceneDelegate.swift */,
-				F7C50D6027997058005AC8F1 /* ViewController.swift */,
-				F7C50D6227997058005AC8F1 /* Main.storyboard */,
+				F7C50D8527A24758005AC8F1 /* view */,
+				F7C50D7E279FB870005AC8F1 /* model */,
+				F7C50D80279FB8D0005AC8F1 /* view model */,
+				F7C50D7F279FB8AE005AC8F1 /* controller */,
 				F7C50D6527997059005AC8F1 /* Assets.xcassets */,
 				F7C50D6727997059005AC8F1 /* LaunchScreen.storyboard */,
+				F7C50D8827A27024005AC8F1 /* NotoSansTC-Medium.otf */,
 				F7C50D6A27997059005AC8F1 /* Info.plist */,
 			);
 			path = photoEditor;
+			sourceTree = "<group>";
+		};
+		F7C50D7E279FB870005AC8F1 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F7C50D7A279ED58D005AC8F1 /* flip.swift */,
+				F7C50D76279C73A2005AC8F1 /* ratio.swift */,
+				F7C50D81279FCCDF005AC8F1 /* colorFilter.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		F7C50D7F279FB8AE005AC8F1 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F7C50D6027997058005AC8F1 /* ViewController.swift */,
+				F7C50D70279C0341005AC8F1 /* editPhotoVC.swift */,
+				F7C50D78279D0041005AC8F1 /* cropPhotoVC.swift */,
+				F7C50D7C279FA839005AC8F1 /* flipPhotoVC.swift */,
+				F7C50D8327A244F7005AC8F1 /* extension.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		F7C50D80279FB8D0005AC8F1 /* view model */ = {
+			isa = PBXGroup;
+			children = (
+				F7C50D74279C6F5D005AC8F1 /* cropView.swift */,
+				F7C50D72279C12A1005AC8F1 /* editorView.swift */,
+			);
+			path = "view model";
+			sourceTree = "<group>";
+		};
+		F7C50D8527A24758005AC8F1 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				F7C50D6227997058005AC8F1 /* Main.storyboard */,
+			);
+			path = view;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +189,7 @@
 			files = (
 				F7C50D6927997059005AC8F1 /* LaunchScreen.storyboard in Resources */,
 				F7C50D6627997059005AC8F1 /* Assets.xcassets in Resources */,
+				F7C50D8927A27024005AC8F1 /* NotoSansTC-Medium.otf in Resources */,
 				F7C50D6427997058005AC8F1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,8 +202,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F7C50D6127997058005AC8F1 /* ViewController.swift in Sources */,
+				F7C50D71279C0341005AC8F1 /* editPhotoVC.swift in Sources */,
 				F7C50D5D27997058005AC8F1 /* AppDelegate.swift in Sources */,
+				F7C50D8427A244F7005AC8F1 /* extension.swift in Sources */,
+				F7C50D79279D0041005AC8F1 /* cropPhotoVC.swift in Sources */,
 				F7C50D5F27997058005AC8F1 /* SceneDelegate.swift in Sources */,
+				F7C50D75279C6F5D005AC8F1 /* cropView.swift in Sources */,
+				F7C50D7D279FA839005AC8F1 /* flipPhotoVC.swift in Sources */,
+				F7C50D7B279ED58D005AC8F1 /* flip.swift in Sources */,
+				F7C50D73279C12A1005AC8F1 /* editorView.swift in Sources */,
+				F7C50D82279FCCDF005AC8F1 /* colorFilter.swift in Sources */,
+				F7C50D77279C73A2005AC8F1 /* ratio.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -217,7 +289,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -272,7 +344,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -292,9 +364,13 @@
 				DEVELOPMENT_TEAM = 69M4JWQG8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = photoEditor/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "開啟照片權限";
+				INFOPLIST_KEY_NSCameraUsageDescription = "開啟相機權限拍照";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "開啟相簿存取權限儲存圖片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "NotoSerifCJKtc-Medium.otf";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -306,7 +382,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -320,9 +396,13 @@
 				DEVELOPMENT_TEAM = 69M4JWQG8L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = photoEditor/Info.plist;
+				INFOPLIST_KEY_NSAppleMusicUsageDescription = "開啟照片權限";
+				INFOPLIST_KEY_NSCameraUsageDescription = "開啟相機權限拍照";
+				INFOPLIST_KEY_NSPhotoLibraryAddUsageDescription = "開啟相簿存取權限儲存圖片";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "NotoSerifCJKtc-Medium.otf";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -334,7 +414,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
